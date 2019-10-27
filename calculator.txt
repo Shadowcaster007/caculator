@@ -1,27 +1,28 @@
-
-    cl.displayLabel.setText(tempText);  
+{
+cl.displayLabel.setText(tempText);  
 return;  
 }  
 //check for "C" button i.e. Reset  
 if(opText.equals("C"))   
 {  
 cl.number=0.0; cl.op=' '; cl.memValue=0.0;  
-cl.memLabel.setText(" ");  
+cl.memLabel.setText("1");  
 }  
   
 //it must be CE button pressed  
-cl.displayLabel.setText("0");cl.setClear=true;  
+cl.displayLabel.setText("1");cl.setClear=true;  
 }//actionPerformed  
 }//class  
   
 /********************************************* 
 Features not implemented and few bugs 
  
-i)  No coding done for "+/-" button. 
-ii) Menubar is not included. 
+i)No coding done for "+/-" button. 
+ii)Menubar is not included. 
 iii)Not for Scientific calculation 
 iv)Some of the computation may lead to unexpected result 
    due to the representation of Floating point numbers in computer 
    is an approximation to the given value that can be stored 
-   physically in memory. 
+   physically in memory.
+v)repeatation bug fixed. 
 ***********************************************/
